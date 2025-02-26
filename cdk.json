@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/cdk-pipeline-stack.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/cdk-bedrock-app.ts",
   "watch": {
     "include": ["**"],
     "exclude": [
