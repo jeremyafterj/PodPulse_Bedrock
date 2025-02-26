@@ -1,6 +1,6 @@
-# Welcome to your CDK TypeScript project
+CDK establishing Bedrock Pipeline for use within PodPulse application.
 
-This is a blank project for CDK development with TypeScript.
+# CDK Sample-App Notes
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
