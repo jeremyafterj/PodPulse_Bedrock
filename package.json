@@ -8,7 +8,11 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "dev": "serverless offline start",
+    "install-all": "find . -name 'package.json' -not -path '**/node_modules/*' -execdir npm install \\;",
+    "build-all": "npm run install-all && find . -name 'package.json' -not -path '**/node_modules/*' -execdir npm run build \\;",
+    "clean": "find . -type f -name '*.js' -not -path '**/node_modules/*' -delete && find . -type f -name '*.d.ts' -not -path '**/node_modules/*' -delete"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
