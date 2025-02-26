@@ -12,10 +12,10 @@ const app = new cdk.App();
 new CdkPipelineStack(app, 'CdkBedrockAppStack', {
   env: {
     account: cdk.SecretValue.secretsManager(
-          'cdk-default-account'
-        ).unsafeUnwrap(),
-    region: 'us-east-1'
-  }
+      'cdk-default-account'
+    ).unsafeUnwrap(),
+    region: 'us-east-1',
+  },
   stackName: 'CdkPipelineStack',
   description: 'AWS CodePipeline for CDK Bedrock Stack',
 });
