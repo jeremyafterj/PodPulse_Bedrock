@@ -11,10 +11,8 @@ const app = new cdk.App();
 // PUG TODO- fix name
 new CdkPipelineStack(app, 'CdkBedrockAppStack', {
   env: {
-    account: cdk.SecretValue.secretsManager(
-      'cdk-default-account'
-    ).unsafeUnwrap(),
-    region: 'us-east-1',
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
   },
   stackName: 'CdkPipelineStack',
   description: 'AWS CodePipeline for CDK Bedrock Stack',
