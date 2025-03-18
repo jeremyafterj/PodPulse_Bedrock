@@ -63,7 +63,9 @@ export const handler = async (event: any): Promise<any> => {
     6. Timestamp Analysis:
       - Comment on the timestamp of the data and its relevance
 
-    Please provide your analysis in a clear, structured format using markdown for better readability.`;
+    Please provide your analysis in a clear, structured format using markdown inside a triple backtick code block for better readability.
+    
+    If you cannot provide a complete response to all 6 sections, please use the final available tokens to state "RESPONSE CUT SHORT"`;
 
     /**
      * NOTE: Different models expect different parameteres for the InvokeModelCommand
